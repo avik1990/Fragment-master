@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment">
+
+    <!--TextView and Button displayed in First Fragment -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity=""
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity=""
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BedRoom Switch"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="25sp" />
+
+        <io.ghyeok.stickyswitch.widget.StickySwitch
+            android:id="@+id/bed_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            app:ss_animationDuration="600"
+            app:ss_animationType="line"
+            android:layout_gravity="center"
+            app:ss_iconPadding="10dp"
+            app:ss_iconSize="5dp"
+            app:ss_leftText="OFF"
+            app:ss_rightText="ON"
+            app:ss_selectedTextSize="14sp"
+            app:ss_sliderBackgroundColor="@color/colorAccent"
+            app:ss_switchColor="@color/colorPrimaryDark"
+            app:ss_textColor="@color/colorPrimary"
+            app:ss_textSize="12sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity=""
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bathroom Switch"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="25sp" />
+
+        <io.ghyeok.stickyswitch.widget.StickySwitch
+            android:id="@+id/bath_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            app:ss_animationDuration="600"
+            app:ss_animationType="line"
+            android:layout_gravity="center"
+            app:ss_iconPadding="10dp"
+            app:ss_iconSize="5dp"
+            app:ss_leftText="OFF"
+            app:ss_rightText="ON"
+            app:ss_selectedTextSize="14sp"
+            app:ss_sliderBackgroundColor="@color/colorAccent"
+            app:ss_switchColor="@color/colorPrimaryDark"
+            app:ss_textColor="@color/colorPrimary"
+            app:ss_textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity=""
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HallRoom Switch"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="25sp" />
+
+        <io.ghyeok.stickyswitch.widget.StickySwitch
+            android:id="@+id/hall_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            app:ss_animationDuration="600"
+            app:ss_animationType="line"
+            android:layout_gravity="center"
+            app:ss_iconPadding="10dp"
+            app:ss_iconSize="5dp"
+            app:ss_leftText="OFF"
+            app:ss_rightText="ON"
+            app:ss_selectedTextSize="14sp"
+            app:ss_sliderBackgroundColor="@color/colorAccent"
+            app:ss_switchColor="@color/colorPrimaryDark"
+            app:ss_textColor="@color/colorPrimary"
+            app:ss_textSize="12sp" />
+
+    </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/send"
+            android:text="Send"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>
